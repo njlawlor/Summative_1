@@ -1,17 +1,30 @@
-enum EIntersections { INTERSECTION_NONE, INTERSECTION_ONE, INTERSECTION_TWO };
+#include <conio.h>
+#include "test.h"
+#include "Geometry.h"
 
-struct TVector2 { float m_fX;      float m_fY; };
 
-struct TTriangle2 { TVector2 m_v2p1;     TVector2 m_v2p2;     TVector2 m_v2p3; };
+int main()
+{
+	TVector3 firstvector;
+	firstvector.m_fX = 5;
+	firstvector.m_fY = 5;
+	firstvector.m_fZ = 10;
 
-struct TRectangle { TVector2 m_v2p1;     TVector2 m_v2p2; };
+	TVector3 secondvector;
+	secondvector.m_fX = 5;
+	secondvector.m_fY = 5;
+	secondvector.m_fZ = 10;
 
-struct TVector3 { float m_fX;      float m_fY;      float m_fZ; };
 
-struct TTriangle3 { TVector3 m_v3p1;     TVector3 m_v3p2;     TVector3 m_v3p3; };
 
-struct T3DLine {
-	TVector3 m_v3q; //point on the line     TVector3 m_v3v; //direction vector along the line }; 
+	enum EIntersections
+	{
+		Intersection_None,
+		INTERSECTION_ONE,
+		INTERECTION_TWO
 
-	struct TCircle { TVector2 m_v2center;     float m_fRadius; };
+	};
+	Testequals(firstvector, secondvector);
 
+
+}
