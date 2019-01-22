@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void Testequals(TVector3 firstvector, TVector3 secondvector)
+void TestEquals(TVector3 firstvector, TVector3 secondvector)
 {
 	
 

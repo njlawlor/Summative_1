@@ -1,66 +1,70 @@
 #ifndef _GEOMETRY_H_
 #define _GEOMETRY_H__
-enum EIntersections
-{ 
-	INTERSECTION_NONE,
-	INTERSECTION_ONE, 
-	INTERSECTION_TWO
-};
 
-struct TVector2 
-{ 
-	float m_fX;  
-	float m_fY;
-};
-
-struct TTriangle2 
-{ 
-	TVector2 m_v2p1;   
-	TVector2 m_v2p2; 
-	TVector2 m_v2p3;
-};
-
-struct TRectangle 
+class Geometry
 {
-	TVector2 m_v2p1;  
-	TVector2 m_v2p2; 
-};
+public:
+	enum EIntersections
+	{
+		INTERSECTION_NONE,
+		INTERSECTION_ONE,
+		INTERSECTION_TWO
+	};
 
-struct TVector3 
-{
-	float m_fX;  
-	float m_fY;    
-	float m_fZ;
-};
+	struct TVector2
+	{
+		float m_fX;
+		float m_fY;
+	};
 
-struct TTriangle3 
-{
-	TVector3 m_v3p1; 
-	TVector3 m_v3p2; 
-	TVector3 m_v3p3;
-};
+	struct TTriangle2
+	{
+		TVector2 m_v2p1;
+		TVector2 m_v2p2;
+		TVector2 m_v2p3;
+	};
 
-struct T3DLine
-{
-	TVector3 m_v3q; //point on the line     
-	TVector3 m_v3v; //direction vector along the line
-}; 
+	struct TRectangle
+	{
+		TVector2 m_v2p1;
+		TVector2 m_v2p2;
+	};
+
+	struct TVector3
+	{
+		float m_fX;
+		float m_fY;
+		float m_fZ;
+	};
+
+	struct TTriangle3
+	{
+		TVector3 m_v3p1;
+		TVector3 m_v3p2;
+		TVector3 m_v3p3;
+	};
+
+	struct T3DLine
+	{
+		TVector3 m_v3q; //point on the line     
+		TVector3 m_v3v; //direction vector along the line
+	};
 
 	struct TCircle
 	{
-		TVector2 m_v2center;   
+		TVector2 m_v2center;
 		float m_fRadius;
 	};
 
-	struct TPlane 
-	{ 
-		TVector3 m_v3normal; 
+	struct TPlane
+	{
+		TVector3 m_v3normal;
 		TVector3 m_v3point;
 	};
 
 	struct TSphere
-	{ 
-		TVector3 m_v3center; 
+	{
+		TVector3 m_v3center;
 		float m_fRadius;
 	};
 
@@ -91,15 +95,15 @@ struct T3DLine
 	float ComputeDistancePointToPlane(const TPlane& _krPlane, const TVector3& _krPoint);
 
 	//Distance between point and center of the spheres 
-	float ComputeDistancePointToSphere(const TSphere& _krSphere,const TVector3& _krPoint); 
+	float ComputeDistancePointToSphere(const TSphere& _krSphere, const TVector3& _krPoint);
 	//Distance between center of the circles 
-	float ComputeDistanceCircleToCircle(const TCircle& _krCircle1,const TCircle& _krCircle2); 
+	float ComputeDistanceCircleToCircle(const TCircle& _krCircle1, const TCircle& _krCircle2);
 
 	//Distance between center of the circle and triangle
-	float ComputeDistanceCircleToTriangle(const TCircle& _krCircle,const TTriangle2& _krTriangle); 
+	float ComputeDistanceCircleToTriangle(const TCircle& _krCircle, const TTriangle2& _krTriangle);
 
 
-	EIntersections ComputeLineSphereIntersection(const T3DLine& _krLine,const TSphere& _krSphere, TVector3& _rv3IntersectionPoint1, TVector3& _rv3IntersectionPoint2);
+	EIntersections ComputeLineSphereIntersection(const T3DLine& _krLine, const TSphere& _krSphere, TVector3& _rv3IntersectionPoint1, TVector3& _rv3IntersectionPoint2);
 
 	bool IsLinePlaneIntersection(const T3DLine& _krLine, const TPlane& _krPlane, TVector3& _rv3IntersectionPoint);
 
@@ -117,4 +121,5 @@ struct T3DLine
 
 	TTriangle2& RotateTriangleAroundPoint(const TTriangle2& _krTriangle, const float _kfRotAngleInRadians, const TVector2& _krRotAroundPoint, TTriangle2& _rRotatedTriangle);
 
+};
 #endif

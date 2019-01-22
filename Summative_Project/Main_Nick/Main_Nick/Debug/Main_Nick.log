@@ -1,0 +1,42 @@
+﻿  test.cpp
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\test.h(7): error C2065: 'TVector3': undeclared identifier
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\test.h(7): error C2182: 'TestEquals': illegal use of type 'void'
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\test.h(7): error C2440: 'initializing': cannot convert from 'initializer list' to 'int'
+  d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\test.h(7): note: The initializer contains too many elements
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\test.cpp(7): error C2065: 'TVector3': undeclared identifier
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\test.cpp(7): error C2146: syntax error: missing ')' before identifier 'firstvector'
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\test.cpp(8): error C2143: syntax error: missing ';' before '{'
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\test.cpp(8): error C2447: '{': missing function header (old-style formal list?)
+  main.cpp
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\test.h(7): error C2065: 'TVector3': undeclared identifier
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\test.h(7): error C2182: 'TestEquals': illegal use of type 'void'
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\test.h(7): error C2440: 'initializing': cannot convert from 'initializer list' to 'int'
+  d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\test.h(7): note: The initializer contains too many elements
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(8): error C2065: 'TVector3': undeclared identifier
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(8): error C2146: syntax error: missing ';' before identifier 'firstvector'
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(8): error C2065: 'firstvector': undeclared identifier
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(9): error C2065: 'firstvector': undeclared identifier
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(9): error C2228: left of '.m_fX' must have class/struct/union
+  d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(9): note: type is 'unknown-type'
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(10): error C2065: 'firstvector': undeclared identifier
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(10): error C2228: left of '.m_fY' must have class/struct/union
+  d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(10): note: type is 'unknown-type'
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(11): error C2065: 'firstvector': undeclared identifier
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(11): error C2228: left of '.m_fZ' must have class/struct/union
+  d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(11): note: type is 'unknown-type'
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(13): error C2065: 'TVector3': undeclared identifier
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(13): error C2146: syntax error: missing ';' before identifier 'secondvector'
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(13): error C2065: 'secondvector': undeclared identifier
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(14): error C2065: 'secondvector': undeclared identifier
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(14): error C2228: left of '.m_fX' must have class/struct/union
+  d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(14): note: type is 'unknown-type'
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(15): error C2065: 'secondvector': undeclared identifier
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(15): error C2228: left of '.m_fY' must have class/struct/union
+  d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(15): note: type is 'unknown-type'
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(16): error C2065: 'secondvector': undeclared identifier
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(16): error C2228: left of '.m_fZ' must have class/struct/union
+  d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(16): note: type is 'unknown-type'
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(27): error C2065: 'firstvector': undeclared identifier
+d:\users\harshit.mal8294\documents\github\summative_1\summative_project\main_nick\main_nick\main.cpp(27): error C2065: 'secondvector': undeclared identifier
+  Geometry.cpp
+  Generating Code...

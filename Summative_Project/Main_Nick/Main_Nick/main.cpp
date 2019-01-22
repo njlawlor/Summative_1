@@ -24,7 +24,9 @@ int main()
 		INTERECTION_TWO
 
 	};
-	Testequals(firstvector, secondvector);
+	TestEquals(firstvector, secondvector);
 
+	    _getch();
+		return 0;
 
 }
